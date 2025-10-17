@@ -1,0 +1,227 @@
+:root {
+    
+   --color-header-bg: #573901;
+
+   --color-main-bg: #f8f5eb;
+   
+   --color-taxt-main: #201902;
+   --color-text-light: #f8f5eb;
+
+   /* --color-button: #f97316; */
+
+   --type-font: "Times New Roman",Times,serif;
+   --font-size-body: 1.5rem;
+   
+   --font-size-small: 0,875rem;
+
+    --font-size-h1:3rem;
+    --font-size-h2:2rem;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* يخلي المقاسات تطلع مضبوطة من غير زيادة  */
+    font-family: var(--type-font);
+    direction: ltr;
+    /* background-color: var(--color-main-bg); */
+    /* background: var(--color-main-bg); */
+}
+
+body{
+    font-family: var(--type-font);
+    background: var(--color-main-bg);
+
+}
+
+/* main{
+    margin-top: 20vh;
+    padding: 20px;
+} */
+
+#header{
+    width: 100%;
+    height: 10vh;
+    direction: ltr;
+    background-color:var(--color-header-bg);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content:center;
+}
+
+.ulhead {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.ulhead a{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    color: var(--color-text-light);
+    font-size: var(--font-size-h2);
+    align-items: center;
+    transition: all 0.3s ease; 
+    /* عشان البروز يكون بسلاسة */
+    border-radius:  15px;
+}
+
+.ulhead a:hover,.a{
+    
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgb(241, 223, 172);
+    /* background-color:var(--color-button); */
+    color: var(--color-button);
+    
+}
+
+.section{
+    padding: 10vh;
+    width: 100vw;
+    height: auto;
+    margin-top: 20vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+.img{
+    width: 30vw;
+    height: auto;
+}
+
+.ulhome{
+    list-style: none;
+    font-size:var(--font-size-h2) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.classskill{
+
+    width: 50vw;
+    height: auto;
+    background:var(--color-header-bg);
+    color: var(--color-text-light);
+    border-radius: 20px;
+    font-size: var(--font-size-body);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    }
+
+#Skills .classskill:hover,.Skills{
+    /* transform: scale(1.1); */
+    cursor: pointer;
+    box-shadow: 0 4px 10px  rgb(241, 223, 172);
+    background-color:var(--color-button);
+    color: var(--color-button);
+    transition: all 0.3s ease; 
+}
+
+.div-prgect{
+    width: 80px;
+    height:auto ;
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    justify-content: center;
+    align-items: center;
+    /* border-radius:15% ; */
+    /* flex-wrap: wrap; */
+}
+
+.progect {
+    width: 22vw;
+    height: 35vh;
+    background-color: var(--color-sidebar-bg);
+    border-radius: 15%;
+    box-shadow: 0 4px 10px  rgb(241, 223, 172);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 2%;  */
+    gap: 15%;
+}
+
+.progect-a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--color-header-bg);
+    border-radius: 15%;
+}
+
+#Projects .progect-a:hover,#prject{
+
+    /* transform: scale(1.1); */
+    cursor: pointer;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 2); */
+    background-color:var(--color-header-bg);
+    color: var(--color-text-light);
+    transition: all 0.3s ease;
+
+    box-shadow: 0 4px 10px rgb(255, 176, 87);
+}
+
+#Certificates .progect-a:hover,#prject{
+     /* transform: scale(1.1); */
+    cursor: pointer;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 2); */
+    background-color:var(--color-header-bg);
+    color: var(--color-text-light);
+    transition: all 0.3s ease;
+
+    box-shadow: 0 4px 10px rgb(255, 176, 87);
+}
+
+#Experience .classskill:hover,.Experience{
+    /* transform: scale(1.1); */
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 2);
+    background-color:var(--color-button);
+    color: var(--color-button);
+    transition: all 0.3s ease; 
+}
+
+.conn{
+    font-size: var(--font-size-body);
+    color: var(--color-taxt-main);
+}
+
+#contact .conn:hover.conn{
+
+    color: rgb(221, 184, 21);
+    /* background: var(--color-header-bg); */
+}
+
+.moon1{
+    width: 9vh;
+    height: auto;
+    margin: 0;
+}
+
+.ulhead .classmoon:hover,.class{
+    
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 4px 10px  rgb(241, 223, 172);
+    /* background-color:var(--color-button); */
+    color: var(--color-button);
+    border-radius: 30%;
+    transition: all 0.3s ease;    
+}
+
